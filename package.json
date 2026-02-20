@@ -1,0 +1,21 @@
+{
+  "name": "cf-images-migration-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "cf-images-migrate": "./src/index.ts"
+  },
+  "scripts": {
+    "check": "bunx tsc --noEmit",
+    "start": "bun run ./src/index.ts",
+    "migrate": "bun run ./src/index.ts",
+    "list": "bun run ./src/index.ts list",
+    "help": "bun run ./src/index.ts --help"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.9",
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}
